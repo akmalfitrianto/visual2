@@ -1,7 +1,7 @@
 object Form3: TForm3
   Left = 192
   Top = 125
-  Width = 331
+  Width = 392
   Height = 344
   Caption = 'KATEGORI'
   Color = clBtnFace
@@ -11,24 +11,25 @@ object Form3: TForm3
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 16
-    Top = 32
-    Width = 28
-    Height = 13
+    Left = 32
+    Top = 24
+    Width = 33
+    Height = 16
     Caption = 'NAME'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -11
+    Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
   end
   object Label2: TLabel
     Left = 16
-    Top = 248
+    Top = 264
     Width = 61
     Height = 13
     Caption = 'INPUT NAME'
@@ -40,9 +41,9 @@ object Form3: TForm3
     ParentFont = False
   end
   object e1: TEdit
-    Left = 48
+    Left = 104
     Top = 24
-    Width = 217
+    Width = 249
     Height = 21
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -53,8 +54,8 @@ object Form3: TForm3
     TabOrder = 0
   end
   object Button1: TButton
-    Left = 80
-    Top = 72
+    Left = 104
+    Top = 56
     Width = 57
     Height = 25
     Caption = 'INSERT'
@@ -68,8 +69,8 @@ object Form3: TForm3
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 144
-    Top = 72
+    Left = 168
+    Top = 56
     Width = 57
     Height = 25
     Caption = 'UPDATE'
@@ -83,8 +84,8 @@ object Form3: TForm3
     OnClick = Button2Click
   end
   object Button3: TButton
-    Left = 208
-    Top = 72
+    Left = 232
+    Top = 56
     Width = 57
     Height = 25
     Caption = 'DELETE'
@@ -99,9 +100,9 @@ object Form3: TForm3
   end
   object DBGrid1: TDBGrid
     Left = 16
-    Top = 112
-    Width = 257
-    Height = 113
+    Top = 96
+    Width = 337
+    Height = 153
     DataSource = DataModule4.dskategori
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -117,10 +118,10 @@ object Form3: TForm3
     TitleFont.Style = []
     OnCellClick = DBGrid1CellClick
   end
-  object Edit2: TEdit
+  object e2: TEdit
     Left = 88
-    Top = 240
-    Width = 129
+    Top = 264
+    Width = 193
     Height = 21
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -129,13 +130,14 @@ object Form3: TForm3
     Font.Style = []
     ParentFont = False
     TabOrder = 5
+    OnChange = e2Change
   end
   object Button4: TButton
-    Left = 224
-    Top = 240
-    Width = 49
+    Left = 296
+    Top = 256
+    Width = 57
     Height = 33
-    Caption = 'CARI'
+    Caption = 'SEARCH'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -143,5 +145,24 @@ object Form3: TForm3
     Font.Style = []
     ParentFont = False
     TabOrder = 6
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 296
+    Top = 56
+    Width = 59
+    Height = 25
+    Caption = 'CANCEL'
+    TabOrder = 7
+    OnClick = Button5Click
+  end
+  object Button6: TButton
+    Left = 40
+    Top = 56
+    Width = 57
+    Height = 25
+    Caption = 'NEW'
+    TabOrder = 8
+    OnClick = Button6Click
   end
 end

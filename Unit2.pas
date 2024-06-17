@@ -4,12 +4,18 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls;
+  Dialogs, StdCtrls, jpeg, ExtCtrls;
 
 type
   TForm2 = class(TForm)
     e1: TEdit;
     Button1: TButton;
+    Label1: TLabel;
+    e2: TEdit;
+    Label2: TLabel;
+    Button2: TButton;
+    Image1: TImage;
+    CheckBox1: TCheckBox;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
